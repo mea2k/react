@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+
+.card {
+    vertical-align: top;
+    align-content: center;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.card-img-top {
+    width: 190px;
+    background-color: gray;
+    margin: 5px;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.card-text {
+    line-height: 0.9em;
+}
+
+.card-link {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 2px;
+    padding: 3px;
+    text-wrap: none;
+}
+
+.card-link:hover {
+    background-color: darkblue;
+}
