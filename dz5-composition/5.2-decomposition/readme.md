@@ -40,6 +40,8 @@
     * `StaticList` - список новостей
     * `AnimatedList` - список сменяющихся новостей в одной строке - **!!вот тут проболема - не работает!!** 
   * использует `Stockings`(котировки) ([/src/components/cards/Stockings](src/components/cards/Stockings))
+    * `StocksItem` - курс валют (один по отношению к другому)
+    * `CourseItem` - стоимость одного ресурса (нефть, например) 
 
 ### 4 - Search - строка поиска
 Все компоненты в корневом разделе (src/components/Search):
