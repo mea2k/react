@@ -3,6 +3,23 @@
 На рисунке описаны выделенные области ([рисунок](screenshot_marked.png))
 ![avatar](screenshot_marked.png)
 
+### Общие сведения
+
+Информация по кструктуре проекта:
+* `public` - статические данные (сама страница index.html, картинки, CSS-стили, иконки и пр.)
+* `src` - исходные коды
+  *  `src/App.js` - самый главный файл проекта
+  *  `components/cards` - компоненты-карточки (правый верхний угол страницы)
+  *  `components/headlines` - компоненты верхней строки меню
+  *  `components/media` - компоненты медиа-блока
+  *  `components/widget` - компоненты виджетов (тематических блоков)
+  *  `components/public` - компоненты общего использования
+  *  `Layouts` - оберточные компоненты, создающие структуру страницы
+  *  `const` - константы, входные данные для всех компонентов
+
+**ВСЕ компоненты используют ТОЛЬКО входные данные!** Они берутся из констант ([src/const](src/const)).
+ 
+
 ### 1 - NotifyCards - правое меню
 Все компоненты в разделе cards:
 * `UserInfo` ([/src/components/cards/UserInfo](src/components/cards/UserInfo))
@@ -31,10 +48,29 @@
       * `SearchForm` - сама строка поиска(форма)
       * `SearchExampleRow` - пример поиска
 
-### 4 - Widgets - блоки с тематической информацией
+### 5 - Widgets - блоки с тематической информацией
 Все компоненты в разделе widgets (src/components/widgets):
-* `WeatherWidget` - прогноз погоды ([/src/components/widgets/Weather](src/components/Weather))
-* `Services` - посещаемые сервисы Яндекс ([/src/components/widgets/Services](src/components/Services))
-* `Region` - карта региона ([/src/components/widgets/Region](src/components/Region))
-* `Programme` - ТВ-программа ([/src/components/widgets/Programme](src/components/Programme))
-* `WeatherWidget` - прогноз погоды ([/src/components/widgets/Weather](src/components/Weather))
+* `WeatherWidget` - прогноз погоды ([/src/components/widgets/Weather](src/components/widgets/Weather))
+* `Services` - посещаемые сервисы Яндекс ([/src/components/widgets/Services](src/components/widgets/Services))
+* `Region` - карта региона ([/src/components/widgets/Region](src/components/widgets/Region))
+* `Programme` - ТВ-программа ([/src/components/widgets/Programme](src/components/widgets/Programme))
+* `Afisha` - новинки кино ([/src/components/widgets/Afisha](src/components/widgets/Afisha))
+
+
+### 6 - Media - медиа-блоки
+Все компоненты в разделе media (src/components/media):
+* `Zen` - лента Дзен ([/src/components/media/Zen](src/components/media/Zen))
+* `AfishaMedia` - лента новинок кино ([/src/components/media/Afisha](src/components/media/Afisha))
+* `NewsMedia` - лента новостей ([/src/components/media/News](src/components/media/News))
+Все компоненты используют `DefaultMedia`. А компоненты карусели(Carousel) используют типовой `DefaultCarousel`. В качестве параметра `DefaultCarousel` принимает компонент, который отображает один элемент(item). Например, `ZenItem`, `AfishaItem`, `NewsItem`.
+
+### 7 - MediaToggleLine - разделительная линия медиа-блока
+Все компоненты в разделе media (src/components/media):
+* `MediaToggleLine` - разделительная линия ([/src/components/media/MediaToggleLine](src/components/media/MediaToggleLine))
+
+### 8 - Footer - нижняя часть страницы
+Все компоненты в корневом разделе src/components/Footer:
+* используется `LinksLayout` - для разбиения множества ссылок на столбцы ([src/components/Footer](src/components/Footer))
+  * используется типовой `DefaultLinks` - отображает список ссылок ([src/components/Footer](src/components/Footer))
+
+
