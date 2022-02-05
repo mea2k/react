@@ -31,7 +31,7 @@
 Все компоненты в разделе headlines:
 * `City` ([/src/components/headlines/City](src/components/headlines/City))
 * `MenuBar` ([/src/components/headlines/MenuBar](src/components/headlines/MenuBar))
-* меню `Settings` ([/src/components/headlines/Settings](src/components/headlines/Settings))
+  * меню `Settings` ([/src/components/headlines/Settings](src/components/headlines/Settings))
 
 ### 3 - TopBlock - верхний блок
 Все компоненты в корневом разделе (src/components) и в разделе карточек (/src/components/cards):
