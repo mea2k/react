@@ -3,7 +3,7 @@
 
 ### Общие сведения
 
-Информация по кструктуре проекта:
+Информация по структуре проекта:
 * `public` - статические данные (сама страница index.html, картинки, CSS-стили, иконки и пр.)
 * `src` - исходные коды
   *  `src/App.js` - самый главный файл проекта
@@ -38,7 +38,7 @@
 * `TopNews` ([/src/components/TopNews](src/components/TopNews))
   * использует `NewsCard`(новости) ([/src/components/cards/NewsCard](src/components/cards/NewsCard))
     * `StaticList` - список новостей
-    * `AnimatedList` - список сменяющихся новостей в одной строке - **!!вот тут проболема - не работает!!** 
+    * `AnimatedList` - список сменяющихся новостей в одной строке - [#FF0000]**!!вот тут проблема - не работает!!** 
   * использует `Stockings`(котировки) ([/src/components/cards/Stockings](src/components/cards/Stockings))
     * `StocksItem` - курс валют (один по отношению к другому)
     * `CourseItem` - стоимость одного ресурса (нефть, например) 
