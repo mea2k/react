@@ -1,0 +1,448 @@
+@-webkit-keyframes news__dummy {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .7
+    }
+}
+
+@keyframes news__dummy {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .7
+    }
+}
+
+
+
+
+
+
+.news {
+    margin-bottom: 2px
+}
+
+.news__collapsed {
+    margin-bottom: 15px
+}
+
+.news .widget-control__button {
+    margin-left: 3px
+}
+
+.news__tabs {
+    margin-right: 18px;
+    padding-top: 4px
+}
+
+.news__head-item, .news__tab-wrapper {
+    display: inline-block;
+    white-space: nowrap
+}
+
+.news__tab-wrapper {
+    margin-right: 12px
+}
+
+.news__head-item {
+    margin-top: 0;
+    margin-bottom: 7px;
+    padding-top: 0;
+    vertical-align: baseline
+}
+
+.i-ua_browser_msie .news__head-item {
+    vertical-align: middle
+}
+
+.news__panels {
+    margin-top: 3px
+}
+
+.news__loader {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-animation: news__dummy .7s ease-in-out alternate infinite;
+    animation: news__dummy .7s ease-in-out alternate infinite
+}
+
+.news__loader-line {
+    position: relative;
+    height: 6px;
+    margin: 5px 0 15px;
+    opacity: .1;
+    border-radius: 1px;
+    background: currentColor
+}
+
+.document_screen_shorten2 .news__loader-line {
+    margin-bottom: 13px
+}
+
+.news__loader-line:nth-child(1) {
+    width: 320px
+}
+
+.news__loader-line:nth-child(2) {
+    width: 429px
+}
+
+.news__loader-line:nth-child(3) {
+    width: 326px
+}
+
+.news__loader-line:nth-child(4) {
+    width: 400px
+}
+
+.news__loader-line:nth-child(5) {
+    width: 320px
+}
+
+.news__loader-line:before {
+    position: absolute;
+    top: 0;
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    content: '';
+    border-radius: 100%;
+    background: inherit
+}
+
+.news_animation_yes .news__header {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: -40px;
+    padding-left: 40px
+}
+
+.news__list {
+    width: 100%;
+    min-height: 94px;
+    padding: 0;
+    max-height: 999999px;
+    -webkit-text-size-adjust: 100%;
+    list-style: none
+}
+
+.document_screen_shorten2 .news__list {
+    min-height: 88px
+}
+
+.news__list .list__item {
+    position: relative;
+    padding-right: 2px
+}
+
+    .news__list .list__item .news__item-inner:before {
+        left: -14px;
+        content: '•';
+        font: .75em/1.6em Verdana,sans-serif;
+        position: absolute
+    }
+
+.i-ua_browser_msie .news__list .list__item:before {
+    line-height: normal
+}
+
+
+
+
+
+.news__alarm {
+    padding-right: 12px;
+    white-space: nowrap
+}
+
+    .news__alarm .home-link {
+        color: #ee7b00
+    }
+
+.news__hot {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: -20px;
+    width: 16px;
+    height: 16px
+}
+
+.list__item_icon_empty_hot .news__hot {
+    left: 0
+}
+
+.news__hot-icon {
+    fill: red
+}
+
+.i-ua_browser_presto .news__hot, .m-svg .news__hot {
+    display: block
+}
+
+.news_numbers_hide .list__item:before, .news_numbers_hide .news__hot {
+    display: none
+}
+
+.i-ua_browser_msie11 .news__list .list__item:before, .i-ua_os_ios .news__list .list__item:before {
+    top: 0
+}
+
+
+.news__agency-icon {
+    font: 0/0 a;
+    border: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.news__agency-icon-image {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.news__agency-icon-image-empty {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-image: url(//web.archive.org/web/20190731001143im_/https://yastatic.net/s3/home-static/_/w/j/Vc1CjGtwp8oRwfxQXoRxviCW0.svg);
+    background-size: contain
+}
+
+.i-ua_inlinesvg_no .news__agency-icon-image-empty {
+    background-image: url(//web.archive.org/web/20190731001143im_/https://yastatic.net/s3/home-static/_/R/V/m0leg9Y-TK9JTEA7xrNKyeOE4.png)
+}
+
+.news__agency-icon_desktop {
+    width: 14px;
+    height: 14px;
+    margin: -3px 7px 0 -21px;
+    display: none
+}
+
+.container__first .col_td_0 .news__agency-icon_desktop {
+    display: inline-block
+}
+
+.news_dark-skin .news__agency-icon_image_yes {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    background-color: #fff
+}
+
+.news__animation-list {
+    position: relative;
+    min-height: 0;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.document_screen_shorten2 .news__animation-list {
+    min-height: 0;
+    padding-bottom: 8px
+}
+
+.container__first .col_td_0 .news__animation-list .news__agency-icon_desktop {
+    margin-left: 1px
+}
+
+.container__first .col_td_0 .news__animation-list .list__item_icon, .container__first .col_td_0 .news__animation-list .list__item_icon_hot {
+    padding-left: 0
+}
+
+    .container__first .col_td_0 .news__animation-list .list__item_icon .list__item-content .news__agency-icon_desktop, .container__first .col_td_0 .news__animation-list .list__item_icon_hot .list__item-content .news__agency-icon_desktop {
+        margin-left: -21px
+    }
+
+.container__first .col_td_0 .news__animation-list .list__item_icon_empty, .container__first .col_td_0 .news__animation-list .list__item_icon_empty_hot {
+    margin-left: 0
+}
+
+.news__animation-list .list__item {
+    position: absolute;
+    width: 100%
+}
+
+.news__animation-list .list__item-content {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%
+}
+
+.news__animation-list .news__item-inner {
+    display: inline-block;
+    max-width: 100%;
+    opacity: 1;
+    -webkit-transform: translateY(1.1em);
+    transform: translateY(1.1em);
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-transition-property: opacity,-webkit-transform;
+    transition-property: opacity,transform;
+    transition-property: opacity,transform,-webkit-transform
+}
+
+.news__animation-list .news__item-content {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.news__animation-list .list__item_fade_in {
+    z-index: 1
+}
+
+    
+    .news__animation-list .list__item_fade_in .news__item-inner {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+ 
+
+
+.news__animation-list .list__item_fade_out .news__item-inner {
+    -webkit-transform: translateY(-1.1em);
+    transform: translateY(-1.1em)
+}
+
+
+
+.news__animation-list .news__animated-item .list__item-content {
+    background: #ffffff;
+    z-index: 10;
+    opacity: 1;
+}
+    .news__animation-list .news__animated-item:first-child {
+        animation: rollNews 5s linear infinite;
+    }
+
+@keyframes rollNews {
+    0% {
+        margin-top: -270px;
+    }
+
+    5% {
+        margin-top: -180px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    38% {
+        margin-top: -90px;
+    }
+
+    66% {
+        margin-top: -90px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+}
+
+
+ /* Мои добавленные для анимации */
+.news__animation-list-container {
+    position: fixed;
+    width: 100%;
+    bottom: 45%;
+    display: block;
+}
+.news__animation-list-mask {
+    overflow: hidden;
+    height: 15px;
+}
+.news__animation-list-ul {
+    position: relative;
+    overflow: hidden;
+}
+    .news__animation-list-ul .news__animated-item-li {
+        padding: 4px 12px;
+        height: 15px;
+        margin-bottom: 5px;
+        position: absolute;
+        list-style: none;
+    }
+
+    .news__animation-list-ul .fade-in {
+        animation: show 5s linear infinite;
+    }
+
+    .news__animation-list-ul .news__animated-item-li {
+        background: #ffffff;
+    }
+
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+
+    5% {
+        margin-top: -180px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    38% {
+        margin-top: -90px;
+    }
+
+    66% {
+        margin-top: -90px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+}
+

@@ -1,0 +1,14 @@
+.afisha__item {
+    overflow: hidden;
+    margin-right: 8px
+}
+
+.b-afisha__premiere, h1, h2 {
+    margin-bottom: 9px
+}
+
+
+
+.afisha-event-show:focus {
+    outline: 2px solid #fc0
+}

@@ -1,0 +1,51 @@
+.media-grid__toggle-line-wrap {
+    background-color: #f7f7f7
+}
+
+.b-page_media-footer-theme_black .media-grid__toggle-line-wrap {
+    background-color: #222229
+}
+
+.media-grid__toggle-line {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: right
+}
+
+
+
+.media-grid__toggle-button {
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    padding-left: 20px;
+    color: rgba(0,0,0,.45)
+}
+
+.media-grid__toggle-button-icon {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    display: block;
+    width: 12px;
+    height: 9px;
+    -webkit-transition: .15s -webkit-transform ease-out;
+    transition: .15s transform ease-out;
+    transition: .15s transform ease-out,.15s -webkit-transform ease-out
+}
+
+.media-grid__toggle-button-icon-svg {
+    display: block
+}
+
+.i-ua_inlinesvg_no .media-grid__toggle-button-icon-svg {
+    display: none
+}
+
+.media-grid__toggle-button-icon-png {
+    display: block;
+    height: 100%;
+    opacity: .45;
+    background: no-repeat 50% 0 url(/public/media/media-toggle-line.png)
+}

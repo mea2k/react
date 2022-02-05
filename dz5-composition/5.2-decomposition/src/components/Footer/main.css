@@ -1,0 +1,191 @@
+
+.media-footer {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 32px 80px 39px;
+    color: rgba(0,0,0,.45);
+    background-color: #f0f0f0
+}
+
+.i-ua_browser_safari .media-footer {
+    -webkit-font-smoothing: antialiased
+}
+
+@media (max-width:1100px) {
+    .media-footer {
+        padding-right: 36px;
+        padding-left: 36px
+    }
+}
+
+.media-footer__container {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 896px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.media-footer:not(.media-footer_slim_yes) .media-footer__container {
+    padding: 0
+}
+
+.media-footer__logo {
+    width: 61px;
+    height: 28px;
+    margin-top: 20px;
+    opacity: .4;
+    background-position: 50%;
+    background-image: url(/public/media/footer-logo_theme_white_ru.svg)
+}
+
+.i-ua_inlinesvg_no .media-footer__logo {
+    background-image: url(/public/media/footer-logo_theme_white_ru.png)
+}
+
+.media-footer__logo_lang_en {
+    background-image: url(/public/media/footer-logo_theme_white_en.svg)
+}
+
+.i-ua_inlinesvg_no .media-footer__logo_lang_en {
+    background-image: url(/public/media/footer-logo_theme_white_en.png)
+}
+
+.b-page_media-footer-theme_black .media-footer {
+    color: #5b5c5f;
+    background-color: #15161a
+}
+
+.b-page_media-footer-theme_black .media-footer__logo {
+    background-image: url(/public/media/footer-logo_theme_black_ru.svg)
+}
+
+.i-ua_inlinesvg_no .b-page_media-footer-theme_black .media-footer__logo {
+    background-image: url(/public/media/footer-logo_theme_black_ru.png)
+}
+
+.b-page_media-footer-theme_black .media-footer__logo_lang_en {
+    background-image: url(/public/media/footer-logo_theme_black_en.svg)
+}
+
+.i-ua_inlinesvg_no .b-page_media-footer-theme_black .media-footer__logo_lang_en {
+    background-image: url(/public/media/footer-logo_theme_black_en.png)
+}
+
+.home-link_theme_media-minor-white:link, .home-link_theme_media-minor-white:visited, .home-link_theme_media-white:link, .home-link_theme_media-white:visited {
+    color: rgba(0,0,0,.45)
+}
+
+.media-footer__links {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-width: 300px;
+    padding-left: 0
+}
+
+.media-grid_collapsed_yes .media-footer__links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.media-footer__links-list {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0 50px 0 0;
+    list-style: none
+}
+
+.media-footer__links-item {
+    margin-top: 11px
+}
+
+    .media-footer__links-item:first-child {
+        margin-top: 0
+    }
+
+.media-footer__smart-link:first-child {
+    font-weight: 700
+}
+
+.business__sublink {
+    margin-right: 3px
+}
+
+    .business__link + .business__link, .business__sublink + .business__link {
+        margin-left: 16px
+    }
+
+.business__list {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0 60px 0 0;
+    list-style: none
+}
+
+.business__li {
+    margin-top: 11px
+}
+
+    .business__li:first-child, .company-links__li:first-child {
+        margin-top: 0
+    }
+
+.company-links {
+    text-align: right
+}
+
+.company-links__layout {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 50px
+}
+
+.company-links__list-wrapper {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: 60px;
+    vertical-align: top
+}
+
+.company-links__list {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.company-links__item {
+    margin-right: 16px
+}
+
+.company-links__li {
+    margin-top: 11px
+}

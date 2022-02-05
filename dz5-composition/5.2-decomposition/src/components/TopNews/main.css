@@ -1,0 +1,123 @@
+.desk-notif-card_type_login .desk-notif-card__card {
+    min-height: 40px
+}
+
+.desk-notif-card_type_login .desk-notif-card__toggler_type_minify {
+    top: 2px;
+    right: -3px;
+    bottom: 0;
+    height: auto
+}
+
+.desk-notif-card_type_login .desk-notif-card__login-mail-promo {
+    color: rgba(0,0,0,.45)
+}
+
+
+.desk-notif-card__login-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 14px
+}
+
+.desk-notif-card__login-mail-promo {
+    display: inline-block
+}
+
+.desk-notif-card__login-minified {
+    visibility: hidden;
+    max-height: 0;
+    -webkit-transition-property: max-height,opacity,visibility;
+    transition-property: max-height,opacity,visibility;
+    opacity: 0
+}
+
+.desk-notif-card_minified_yes .desk-notif-card__login-minified {
+    visibility: visible;
+    max-height: 20px;
+    opacity: 1
+}
+
+.desk-notif-card__login-expanded, .desk-notif-card__login-minified, .desk-notif-card__login-user {
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out
+}
+
+.desk-notif-card__login-expanded {
+    position: relative;
+    max-height: 120px;
+    text-align: center;
+    -webkit-transition-property: max-height,opacity,visibility;
+    transition-property: max-height,opacity,visibility
+}
+
+.desk-notif-card_minified_yes .desk-notif-card__login-expanded {
+    visibility: hidden;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0
+}
+
+.desk-notif-card__login-user {
+    overflow: hidden;
+    -webkit-transition-property: opacity,visibility;
+    transition-property: opacity,visibility;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.desk-notif-card__login-user_suggested {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0
+}
+
+.desk-notif-card_suggested_yes .desk-notif-card__login-user_default {
+    visibility: hidden;
+    opacity: 0
+}
+
+.desk-notif-card_suggested_yes .desk-notif-card__login-user_suggested {
+    visibility: visible;
+    opacity: 1
+}
+
+.desk-notif-card__login-user-name {
+    margin-left: 10px;
+    vertical-align: middle
+}
+
+.desk-notif-card__login-bottom-link {
+    font-size: 85%;
+    line-height: 1.8em;
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: -4px
+}
+
+.desk-notif-card__login-not-me {
+    display: inline-block;
+    padding: 0 4px
+}
+
+@media (min-width:1900px) {
+    .desk-notif-card__login-enter-expanded {
+        font-size: 100%
+    }
+}
+
+.desk-notif-card_login-plus {
+    display: inline-block;
+    width: 100%;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    text-align: center
+}

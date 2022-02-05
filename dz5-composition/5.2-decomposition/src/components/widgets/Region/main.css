@@ -1,0 +1,46 @@
+.region__icon-inner {
+    position: absolute;
+    left: 2px;
+    width: 21px;
+    height: 21px
+}
+
+.region__title {
+    padding-right: 23px
+}
+
+.region:hover .region__setup_icon {
+    opacity: .75
+}
+
+
+.region__link {
+    overflow: hidden
+}
+
+.region__setup_icon {
+    position: relative;
+    float: right;
+    width: 21px;
+    height: 21px;
+    -webkit-transition: opacity .15s;
+    transition: opacity .15s;
+    opacity: 0
+}
+
+.b-page_alt-widgets_yes .region__setup_icon {
+    display: none
+}
+
+
+.i-ua_browser_touch .region__setup_icon, .region .region__setup_icon:focus, .region .region__setup_icon:hover {
+    opacity: 1
+}
+
+.region__icons__icon .b-icon_color {
+    opacity: 0
+}
+
+.region__content {
+    margin-bottom: -8px
+}

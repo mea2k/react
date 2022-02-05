@@ -1,0 +1,48 @@
+﻿import PropTypes from 'prop-types'
+
+import DefaultMedia from '../DefaultMedia';
+
+import './main.css';
+import ZenCarousel from './ZanCarousel';
+
+const Zen = ({ id, title, link, linkInfo, link2, linkInfo2, text, style, data }) => (
+    <DefaultMedia
+        id={id}
+        key={id}
+        title={title}
+        link={link}
+        linkInfo={linkInfo}
+        text={text}
+        link2={link2}
+        linkInfo2={linkInfo2}
+        style={style}
+        hasCarousel
+        center
+        fullWidth
+        >
+
+        <ZenCarousel id={id} {...data} />
+
+        </DefaultMedia>
+);
+
+
+
+
+
+
+Zen.propTypes = {
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    link: PropTypes.string,
+    linkInfo: PropTypes.string,
+    link2: PropTypes.string,
+    linkInfo2: PropTypes.string,
+    text: PropTypes.string,
+    style: PropTypes.string,
+    data: PropTypes.object
+};
+
+
+
+export default Zen;
