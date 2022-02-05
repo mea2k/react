@@ -38,7 +38,7 @@
 * `TopNews` ([/src/components/TopNews](src/components/TopNews))
   * использует `NewsCard`(новости) ([/src/components/cards/NewsCard](src/components/cards/NewsCard))
     * `StaticList` - список новостей
-    * `AnimatedList` - список сменяющихся новостей в одной строке - [#FF0000]**!!вот тут проблема - не работает!!** 
+    * `AnimatedList` - список сменяющихся новостей в одной строке - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)**!!вот тут проблема - не работает!!** 
   * использует `Stockings`(котировки) ([/src/components/cards/Stockings](src/components/cards/Stockings))
     * `StocksItem` - курс валют (один по отношению к другому)
     * `CourseItem` - стоимость одного ресурса (нефть, например) 
