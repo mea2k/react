@@ -66,6 +66,7 @@
 * `Zen` - лента Дзен ([/src/components/media/Zen](src/components/media/Zen))
 * `AfishaMedia` - лента новинок кино ([/src/components/media/Afisha](src/components/media/Afisha))
 * `NewsMedia` - лента новостей ([/src/components/media/News](src/components/media/News))
+
 Все компоненты используют `DefaultMedia`. А компоненты карусели(Carousel) используют типовой `DefaultCarousel`. В качестве параметра `DefaultCarousel` принимает компонент, который отображает один элемент(item). Например, `ZenItem`, `AfishaItem`, `NewsItem`.
 
 ### 7 - MediaToggleLine - разделительная линия медиа-блока
