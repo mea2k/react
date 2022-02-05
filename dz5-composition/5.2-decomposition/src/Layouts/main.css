@@ -1,0 +1,215 @@
+/* TopWrapper */
+.rows, .rows-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100%
+}
+
+.rows-wrapper {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch
+}
+b-widget-data
+    .i-ua_platform_android .rows, .rows-wrapper .rows {
+        min-height: 100vh
+    }
+
+.rows {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 936px;
+    width: 100%
+}
+
+.rows__row {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+    .rows__row > .col {
+        width: 100%
+    }
+
+.rows__row, .rows__row_main {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+
+  /* NotifWrapper */
+@media (min-width:1600px) {
+    .desk-notif {
+        padding-top: 1px
+    }
+
+    .i-ua_browser_edge .desk-notif, .i-ua_browser_firefox .desk-notif {
+        padding-top: 0
+    }
+}
+
+.desk-notif__wrapper {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-top: 7px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    background-color: transparent;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 212px
+}
+
+.b-page_edit_yes .desk-notif__wrapper {
+    z-index: 1
+}
+
+.b-page_edit_yes .desk-notif__wrapper {
+    opacity: .3
+}
+
+.desk-notif {
+    position: relative;
+    z-index: 11
+}
+
+
+/* MainWrapper */
+@media (min-width:1600px) and (max-width:1899.9px) {
+    .b-page_desk-notif_shifted .container__line {
+        width: 900px;
+        padding-right: 36px
+    }
+}
+
+.container_main > .row {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.container__first .col_td_0 {
+    -webkit-box-flex: 100;
+    -webkit-flex: 100 0 auto;
+    -ms-flex: 100 0 auto;
+    flex: 100 0 auto;
+    max-width: 66.6%
+}
+
+.container__first .col_td_1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    max-width: 33.3%
+}
+
+.container__first .gap {
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0
+}
+
+.container__line {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 36px 0 0
+}
+
+.container__first {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-bottom: 9px
+}
+
+.document_screen_shorten2 .container__first {
+    margin-top: -4px;
+    margin-bottom: 7px
+}
+
+.b-page_media-footer-collapsed_yes .rows__bg-media {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.b-page_media-footer-collapsed_yes .gap_side_bottom, .b-page_media-footer-collapsed_yes .rows__bg-media, [lang=tr] .b-page_media-footer-collapsed_yes .rows__row_main {
+    -webkit-box-flex: 4;
+    -webkit-flex-grow: 4;
+    -ms-flex-positive: 4;
+    flex-grow: 4;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+
+.mix-tabber_theme_link .mix-tabber__tab {
+    cursor: pointer
+}
+
+.mix-tabber_theme_link .mix-tabber__tab_selected_no, .mix-tabber_theme_link .mix-tabber__tab_selected_no:visited {
+    color: #6da2e1
+}
+
+
+.widget_collapsed_yes {
+    padding-bottom: 12px
+}
+
+    .widget__collapsed, .widget_collapsed_yes .widget__collapsed-hidden, .widget_collapsed_yes .widget__content {
+        display: none
+    }
+
+.widget__collapsed-text {
+    opacity: .4
+}
+
+.widget_collapsed_yes .widget__collapsed {
+    display: block
+}
+
+.streamnow .widget__content .widget-control {
+    width: 24px;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-left: -30px
+}
+
+
