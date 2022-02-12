@@ -7,6 +7,9 @@
 
 ### ОШИБКА!
 При __первом__ удалении __первых__ часов возникает ошибка как на картинке:
-[image](error.png)
+
+*Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
+    at ClockItem (http://localhost:3000/static/js/bundle.js:407:5)*
+![image](error.png)
 
 Как её исправить?
