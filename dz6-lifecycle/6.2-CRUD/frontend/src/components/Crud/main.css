@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    margin: 10px;
+    align-items: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.header {
+    vertical-align: middle;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+.header h2 {
+    margin-right: 5px;
+}
