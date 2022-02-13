@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+
+.form {
+    vertical-align: top;
+    align-content: start;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+}
+
+.form-item {
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+    width: 150px;
+}
+ .form-item label {
+     font-size: small;
+ }
+
+.form-item button{
+    margin-top: 16px;
+    height: 30px;
+    width: 100%;
+}
+
+input,
+label {
+    display: block;
+}
+
+.form-input {
+    height: 25px;
+    width: 100%;
+}
+.form-select {
+    height: 31px;
+    width: 100%;
+}

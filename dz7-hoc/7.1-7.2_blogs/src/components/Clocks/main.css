@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    margin: 10px;
+    align-items: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
