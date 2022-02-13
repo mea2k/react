@@ -25,15 +25,16 @@ function withModifiedData(reduceFunc, itemPropName) {
         function Wrapper(props) {
             let result = [];
             if (props[propNameFrom]) {
-                // формируем массив типа MONTH - AMOUNT
-                // складываем все записи с одного месяца
-                //const m = new Date(props.list[0].date).toLocaleString('default', { month: 'short' });
+                // формируем массив типа ITEMPROPNAME - AMOUNT
+                // В исходном массиве над группами с одинаковыми индексами (вычисляеются reduceFunc)
+                // происзодит сложение полей AMOUNT и результат добавляется в итоговый массив
                 let reducedData = props[propNameFrom].reduce((res, item) => {
                     const index = reduceFunc(item.date);
                     res[index] = (res[index] || 0) + item.amount;
                     return res;
                 }, []);
 
+                // ПРеобразование итогового массива в массив объектов вида ITEMPROPNAME-AMOUNT
                 for (let key of Object.keys(reducedData)) {
                     result.push({
                         [itemPropName]: key,
