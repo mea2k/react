@@ -21,7 +21,7 @@ function withDate(Component) {
             // разница от сегодня  до 24 часов
             else if (date - propDate < 60 * 60 * 24 * 1000)
                 newDate = Math.floor((date - propDate) / (60 * 60 * 1000)) + ' часов назад';
-            // иначе (разница юольше 24 часов)
+            // иначе (разница больше 24 часов)
             else
                 newDate = Math.floor((date - propDate) / (60 * 60 * 24 * 1000)) + ' дней назад';
 
