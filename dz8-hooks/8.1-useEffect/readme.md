@@ -1,18 +1,17 @@
 ## 8.1 - useEffect
 
 Используемые компоненты:
-`Crud` ([frontend/src/components/Crud](frontend/src/components/Crud)) - основной компонент - вся логика и запросы CRUD реализованы тут
-* `NotesForm` ([frontend/src/components/NotesForm](frontend/src/components/NotesForm)) - форма добавления новой заметки
-* `Notes` ([frontend/src/components/Notes](frontend/src/components/Notes)) - область отображения всех заметок
-  * `NoteItem` ([frontend/src/components/NoteItem](frontend/src/components/NoteItem)) - карточка для заметки
+* `List` ([src/components/List](src/components/List)) - отображение списка пользователей
+* `Details` ([src/components/Details](src/components/Details)) - отображение детальной информации выбранного пользователя
+* `Loader` ([src/components/Loader](src/components/Loader)) - индикатор загрузки
 
-Дополнительно реализованы:
-* `UpdateIcon` ([frontend/src/components/UpdateIcon](frontend/src/components/UpdateIcon)) - иконка обновления списка заметок
-* `Loading` ([frontend/src/components/Loading](frontend/src/components/Loading)) - иконка загрузки - отображается вместо Notes, когда идет загрузка данных
+Используемые данные:
+* список пользователей ([public/data/users.json](public/data/users.json))
+* информация по пользователям ([public/data/NN.json](public/data/))
 
-CRUD:
-* Create - реалиована функция `handleCreate` в Crud
-* Update - реалиована функция `handleUpdate` в Crud (добавлена искусственная задержка в 1000 мс)
-* Delete - реалиована функция `handleDelete` в Crud
-
-Эти функции передаются в качетстве аргументов (props) соответствующим компонентам.
+Логика работы:
+1) В основном компоненте `App` ([src/App.js](src/App.js)) отображаются `List` и `Details`
+2) В `App` в состоянии сохраняется ID выбранного пользователя (`userId`).
+3) При выборе пользователя из компонента `List` запускается функция внутри App - `handleSelectUser`
+4) Если `userId` не пустое, отображается `Details`.
+5) Сам `Details` внутри себя формирует fetch-запрос по URL и userId, и отображает индикатор загрузки (`Loader`), пока запрос не выполнится.
