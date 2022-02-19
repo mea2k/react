@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+
+.item {
+    border: 1px solid black;
+    padding: 5px;
+    display: block;
+    width: 250px;
+    min-height: 180px;
+}
+
+.item-data {
+    padding: 0 0 0 20px;
+}
+
+.error {
+    color: red;
+    background-color: LightCoral;
+    font-weight: bold;
+}
