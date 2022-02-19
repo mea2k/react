@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+
+.list {
+    list-style-type: none;
+}
+
+    .list .list-item {
+        height: 35px;
+        border: 1px solid magenta;
+        cursor: pointer;
+        color: black;
+        background-color: white;
+        vertical-align: middle;
+        padding: 5px 5px 5px 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+        .list .list-item:hover {
+            background-color: darkblue;
+            color: white;
+        }

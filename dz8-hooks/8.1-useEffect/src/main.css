@@ -1,0 +1,25 @@
+body {
+    font-family: 'Mina', sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-content: flex-start;
+    align-items: stretch;
+    justify-content: left;
+    width: 100%;
+}
+
+
+.item {
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+}
