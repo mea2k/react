@@ -1,0 +1,16 @@
+.article {
+    padding: 5%;
+}
+
+.article__title {
+    margin-bottom: 1em;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.article__paragraph {
+    margin-bottom: 0.6em;
+    line-height: 1.5;
+    color: #fff;
+    opacity: .6;
+}
