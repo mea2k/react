@@ -1,7 +1,7 @@
 ## 9.1 - Menu
 
 Используются:
-* новая версия `Route`:
+* новая версия Route:
 `<Route path="" element={<Element ... />} />`
 * новая версия NavLink:
 `<NavLink to="" className={(isActive) => isActive ? 'activeClass' : 'class'}>link</NavLink>`
