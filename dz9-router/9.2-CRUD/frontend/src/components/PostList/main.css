@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+
+.form {
+    vertical-align: top;
+    align-content: left;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.list {
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.post-list-item {
+    border: 2px solid gray;
+    padding: 5px;
+}
+
+    .post-list-item a {
+        text-decoration: none;
+    }
+
+        .post-list-item a:hover {
+            text-decoration: underline;
+        }
+
+
+post-list-item-date {
+    text-align: right;
+    flex-wrap: nowrap;
+    color: darkCyan;
+    font-size: 2;
+}
