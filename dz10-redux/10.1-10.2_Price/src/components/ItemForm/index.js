@@ -23,7 +23,7 @@ const ItemForm = () => {
     }
 
     // обработчик события изменения стоимости работы
-    // + прверка на число
+    // + проверка на число
     const handleChangePrice = (e) => {
         if (!isNaN(parseInt(e.target.value)))
             setItemValue(parseInt(e.target.value));
