@@ -36,4 +36,4 @@
   * При нажатии на кнопку - вызывается событие createItem или updateItem.
 * `ItemsList` ([src/components/ItemList](src/components/ItemsList)) - отображение списка работ
   * информация берется из store.items.items и store.filter.filter
-  * отдельный элемент реализован в [ListItem.js](src/components/ItemsList/ListItem.js)
+  * отображение отдельного элемнета списка реализовано в компоненте `ListItem` ([ListItem.js](src/components/ItemsList/ListItem.js))
