@@ -17,12 +17,12 @@
 
 ### Обработчики событий (Reducers)
 Обработчики событий (не знаю как по-русски правильно reducers):
-* `itemsReducer` ([itemsReducer](store/itemsReducer.js) содержит реализацию событий:
+* `itemsReducer` ([itemsReducer](src/store/itemsReducer.js) содержит реализацию событий:
   * `createItem` - добавление элемента (payload - {name, price}, id добавляется автоматически)
   * `updateItem` - обновление элемента (payload - {id, name, price})
   * `deleteItem` - удаление элемента (payload - { id })
   * `selectItem` - выбор элемента для редактирвоания (payload - id)
-* `filterReducer` ([filterReducer](store/filterReducer.js) содержит реализацию событий:
+* `filterReducer` ([filterReducer](src/store/filterReducer.js) содержит реализацию событий:
   * `setFilter` - установка фильтра (payload - {name, minPrice, maxPrice})
   * `clearFilter` - очистка фильтра (payload - нет)
 
