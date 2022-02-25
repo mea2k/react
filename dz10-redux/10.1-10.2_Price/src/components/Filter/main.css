@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+
+.filter {
+    vertical-align: top;
+    border: 1px solid lightBlue;
+    border-radius: 4px;
+    background-color: blueviolet;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    align-items: stretch;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.filter-item {
+    margin: 10px 10px 10px 10px;
+    width: 500px;
+}
+
+.filter-item label {
+    font-size: small;
+    color: white;
+}
+
+
+.filter-button button {
+    margin: 26px 10px 10px 10px;
+    width: 130px;
+    height: 30px;
+}
+
+input,
+label {
+    display: block;
+}
+
+.filter-input {
+    height: 25px;
+    width: 100%;
+}
+
+
+
