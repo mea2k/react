@@ -1,14 +1,14 @@
-import { createSlice } from '@reduxjs/toolkit'
+п»їimport { createSlice } from '@reduxjs/toolkit'
 
 
-// глобальный счетчки - для идентификаторов
+// РіР»РѕР±Р°Р»СЊРЅС‹Р№ СЃС‡РµС‚С‡РєРё - РґР»СЏ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ
 let id = 0;
 const getID = () => id++;
 
 
 // ITEMS:
-// ITEMS - массив работ {id, name, price }
-// SELECTEDID - выбранный элемент из массива items (значение поля id)
+// ITEMS - РјР°СЃСЃРёРІ СЂР°Р±РѕС‚ {id, name, price }
+// SELECTEDID - РІС‹Р±СЂР°РЅРЅС‹Р№ СЌР»РµРјРµРЅС‚ РёР· РјР°СЃСЃРёРІР° items (Р·РЅР°С‡РµРЅРёРµ РїРѕР»СЏ id)
 const initialState = {
     items: [],
     selectedId: ''
@@ -16,40 +16,40 @@ const initialState = {
 
 
 
-// ПОКА ДЛЯ МЕНЯ ЭТО МАГИЯ
-// я привык работать со старым форматом:
+// РџРћРљРђ Р”Р›РЇ РњР•РќРЇ Р­РўРћ РњРђР“РРЇ
+// СЏ РїСЂРёРІС‹Рє СЂР°Р±РѕС‚Р°С‚СЊ СЃРѕ СЃС‚Р°СЂС‹Рј С„РѕСЂРјР°С‚РѕРј:
 //    createStore()
 //    combineReducers()
-//    itemReducer с switch actions и константами для именования action.types
-// А это все какая-то магия
+//    itemReducer СЃ switch actions Рё РєРѕРЅСЃС‚Р°РЅС‚Р°РјРё РґР»СЏ РёРјРµРЅРѕРІР°РЅРёСЏ action.types
+// Рђ СЌС‚Рѕ РІСЃРµ РєР°РєР°СЏ-С‚Рѕ РјР°РіРёСЏ
 
 const itemsSlice = createSlice({
     name: 'items',
     initialState: initialState,
     reducers: {
-        // добавление нового элемента
+        // РґРѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ СЌР»РµРјРµРЅС‚Р°
         // payload: {name, price}
-        // ID добавляется само
+        // ID РґРѕР±Р°РІР»СЏРµС‚СЃСЏ СЃР°РјРѕ
         createItem(state, action) {
             state.items.push({ ...action.payload, id: getID() });
         },
-        // изменение существующего элемента
+        // РёР·РјРµРЅРµРЅРёРµ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРіРѕ СЌР»РµРјРµРЅС‚Р°
         // payload: { id, name, price }
         updateItem(state, action) {
             state.items = state.items.map((item) => item.id === action.payload.id ? action.payload : item);
             state.selectedId = '';
         },
-        // удаление существующего элемента
-        // payload: { id } // ОБЪЕКТ
+        // СѓРґР°Р»РµРЅРёРµ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРіРѕ СЌР»РµРјРµРЅС‚Р°
+        // payload: { id } // РћР‘РЄР•РљРў
         deleteItem(state, action) {
             state.items = state.items.filter((item) => item.id !== action.payload.id);
-            // очищаем редактируемый элемент
+            // РѕС‡РёС‰Р°РµРј СЂРµРґР°РєС‚РёСЂСѓРµРјС‹Р№ СЌР»РµРјРµРЅС‚
             if (state.selectedId === action.payload.id)
                 state.selectedId = '';
 
         },
-        // выбор элемента для удаления
-        // payload: id  // ЧИСЛО
+        // РІС‹Р±РѕСЂ СЌР»РµРјРµРЅС‚Р° РґР»СЏ СѓРґР°Р»РµРЅРёСЏ
+        // payload: id  // Р§РРЎР›Рћ
         selectItem(state, action) {
             state.selectedId = action.payload;
         }

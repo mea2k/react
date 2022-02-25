@@ -1,33 +1,33 @@
-import { createSlice } from '@reduxjs/toolkit'
+п»їimport { createSlice } from '@reduxjs/toolkit'
 
 
 // FILTER:
-// NAME - фильтрация по имени (ищется вхождение подстроки)
-// MINPRICE - фильтрация по цене снизу
-// MAXPRICE - фильтрация по цене сверху
+// NAME - С„РёР»СЊС‚СЂР°С†РёСЏ РїРѕ РёРјРµРЅРё (РёС‰РµС‚СЃСЏ РІС…РѕР¶РґРµРЅРёРµ РїРѕРґСЃС‚СЂРѕРєРё)
+// MINPRICE - С„РёР»СЊС‚СЂР°С†РёСЏ РїРѕ С†РµРЅРµ СЃРЅРёР·Сѓ
+// MAXPRICE - С„РёР»СЊС‚СЂР°С†РёСЏ РїРѕ С†РµРЅРµ СЃРІРµСЂС…Сѓ
 const initialState = {
     filter: {}
 };
 
 
 
-// ПОКА ДЛЯ МЕНЯ ЭТО МАГИЯ
-// я привык работать со старым форматом:
+// РџРћРљРђ Р”Р›РЇ РњР•РќРЇ Р­РўРћ РњРђР“РРЇ
+// СЏ РїСЂРёРІС‹Рє СЂР°Р±РѕС‚Р°С‚СЊ СЃРѕ СЃС‚Р°СЂС‹Рј С„РѕСЂРјР°С‚РѕРј:
 //    createStore()
 //    combineReducers()
-//    itemReducer с switch actions и константами для именования action.types
-// А это все какая-то магия
+//    itemReducer СЃ switch actions Рё РєРѕРЅСЃС‚Р°РЅС‚Р°РјРё РґР»СЏ РёРјРµРЅРѕРІР°РЅРёСЏ action.types
+// Рђ СЌС‚Рѕ РІСЃРµ РєР°РєР°СЏ-С‚Рѕ РјР°РіРёСЏ
 
 const filterSlice = createSlice({
     name: 'filter',
     initialState: initialState,
     reducers: {
-        // изменение фильтра
+        // РёР·РјРµРЅРµРЅРёРµ С„РёР»СЊС‚СЂР°
         // payload: {name, price}
         setFilter(state, action) {
             state.filter = { ...action.payload };
         },
-        // очистка фильтра
+        // РѕС‡РёСЃС‚РєР° С„РёР»СЊС‚СЂР°
         // payload: -
         clearFilter(state, action) {
             state.filter = {};
