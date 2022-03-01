@@ -36,7 +36,8 @@
 Обработчики событий (не знаю как по-русски правильно reducers):
 * `serviceReducer` ([serviceReducer](frontend/src/store/serviceReducer.js) содержит реализацию событий:
   * `setItems` - заполнение массива элементов (payload - массив [{id, name, price}, ... ])
-  * `setSelectedItemData` - выбор элемента/изменение полей выбранного элемента  (payload - {[param]: value, ...} (param - {name, price, content}))
+  * `selectItem` - выбор элемента  (payload - сам элемент {...})
+  * `setSelectedItemData` - изменение полей выбранного элемента  (payload - {[param]: value, ...} (param - {name, price, content}))
   * `clearSelectedItem` - очистка выбранного элемента (payload - нет)
   * `setStatus` - изменение статуса выполняемой операции  (payload - {statusTypes.LOADING,statusTypes.ERROR,statusTypes.SUCCESS,statusTypes.IDLE})
 * `serverReducer` ([serverReducer](frontend/src/store/serverReducer.js) содержит реализацию событий:
