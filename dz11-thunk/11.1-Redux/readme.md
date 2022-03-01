@@ -1,6 +1,6 @@
 ## 11.1 - Redux
 
-Список работ с вохможностью добавления, удаления и фильтра.
+Список работ с возможностью добавления, удаления и фильтра.
 Работа состоит из идентификатора (id), имени (name), стоимости (price) и информации (content).
 Возможности:
 * просмотр списка работ
@@ -22,7 +22,7 @@
 
 ### Клиентская часть
 
-#### Хранилице (Store)
+#### Хранилище (Store)
 Хранилище реализовано в файле [Store](frontend/src/store/index.js):
 * `services` - создается с помощью `createSlice` и реализовано в [serviceReducer.js](frontend/src/store/serviceReducer.js). Содержит:
   * `items[]` - массив элементов (`{id, name, price}`)
@@ -45,12 +45,12 @@
 
 ### API
 Для упрощения генерации событий и работы со store используются API-функции из своей библиотеки [frontend/src/api/index.js](frontend/src/api/index.js):
-* `getServiceFunc(url, reducer)` - универсальная обертка для вызова GET-событий по ветве services в store. 
+* `getServiceFunc(url, reducer)` - универсальная обертка для вызова GET-событий из блока services в store. 
   При работе функции меняется status (LOADING --> SUCCESS/ERROR). После получения данных (data) вызывается обработчик reducer(data) (второй параметр функции).
-* `async postServiceReducerFunc(url, reducer, body, type="POST")` - универсальная обертка для вызова POST/DELETE-событий по ветве services в store. 
+* `async postServiceReducerFunc(url, reducer, body, type="POST")` - универсальная обертка для вызова POST/DELETE-событий из блока services в store. 
   При работе функции меняется status (LOADING --> SUCCESS/ERROR). В качестве тела запроса отправляется body. После получения данных (data) вызывается обработчик reducer(data) (второй параметр функции).
-* `async postServiceFunc(url, body, type = "POST")` - универсальная обертка для вызова POST/DELETE-событий по ветве services в store БЕЗ обработчика события. Функция возвращает Promise(). 
-  При работе функции меняется status (только LOADING). Ошибки НЕ отлавливаются. В качестве тела запроса отправляется body. После отправки данных вохвращается Promise().
+* `async postServiceFunc(url, body, type = "POST")` - универсальная обертка для вызова POST/DELETE-событий из блока services в store БЕЗ обработчика события. Функция возвращает Promise(). 
+  При работе функции меняется status (только LOADING). Ошибки НЕ отлавливаются. В качестве тела запроса отправляется body. После отправки данных возвращается Promise().
 
 * `getServiceList(url)` - формирование массива элементов. Использует универсальную  `getServiceFunc()` и генератор события `setItems()`.
 * `getServiceItem(url)` - получение информации о выбранном элементе. ID передается в строке url. Использует универсальную  `getServiceFunc()` и генератор события `selectItem()`.
