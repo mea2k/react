@@ -65,12 +65,17 @@
 
 #### Компоненты
 Реализованы компоненты:
-
+* `ServiceList` ([frontend/src/components/ServiceList](frontend/src/components/ServiceList/index.js)) - отображение списка работ
+  * подключает  `items`, `selectedItem`, `status`, `mainUrl`, `actions` из глобального `store`
+  * вся логика удаления информации реализована внутри. Для этого используется `selectedItem` 
+  * используется только глобальный store, а именно - `items`
+  * для отображения одного элемента используется `ListItem` ([frontend/src/components/ServiceList](frontend/src/components/ServiceList/index.js)) - это _"глупый компонент"_
 * `ServiceForm` ([frontend/src/components/ServiceForm](frontend/src/components/ServiceForm/index.js)) - форма редактирования элемента
   * подключает  `selectedItem`, `status`, `mainUrl`, `actions` из глобального `store`
-  * использует  
+  * вся логика изменения и сохранения информации реализована внутри
+  * используется только глобальный store, а именно - `selectedItem`  
 
-* `Error` ([frontend/src/components/Error](frontend/src/components/Error/index.js)) - сообщение об ошибке
+Дополнительно реализованы:
 * Иконки ([frontend/src/components/icons](frontend/src/components/icons/index.js)):
   * `ActionIcon` - иконка с возможностью запуска обработчика клика (тип иконки(стиль) и обработчик передаются в параметрах)
   * `Spin` - "крутилка" для индикатора загрузки
@@ -78,51 +83,5 @@
   * `DelIcon` - иконка "Удаление" (на основе `ActionIcon`)
   * `LoadIcon`- иконка "Загрузка" (на основе `Spin`)
 * `Loading` ([frontend/src/components/Loading](frontend/src/components/Loading/index.js)) - большой индикатор загрузки (на основе `Spin`)
-
-
-
-
-
-
-
-
-
-* `Filter` ([src/components/Filter](src/components/Filter/index.js)) - отображение строки фильтров
-  * Информация берется из state.filter.filter
-* `ItemForm` ([src/components/ItemForm](src/components/ItemForm/index.js)) - форма по добавлению/изменению элемента
-  * информация берется из store.items.items и store.items.selectedId
-  * Помимо этого есть свое внутреннее состояние для хранения имени и стоимости текущей редактируемой/изменяемой работы. 
-  * При нажатии на кнопку - вызывается событие createItem или updateItem.
-* `ItemsList` ([src/components/ItemList](src/components/ItemsList)) - отображение списка работ
-  * информация берется из store.items.items и store.filter.filter
-  * отображение отдельного элемнета списка реализовано в компоненте `ListItem` ([ListItem.js](src/components/ItemsList/ListItem.js))
-
-
-
-
-
-
-
-
-
-
-
-
-В клиентской части реализованы компоненты:
-* 
 * `Error` ([frontend/src/components/Error](frontend/src/components/Error/index.js)) - сообщение об ошибке
 
-  * `PostListItem` ([frontend/src/components/PostListItem](frontend/src/components/PostList/PostListItem.js)) - элемент списка постов (с NavLink, который ведет на страницу поста)
-* `PostItem` ([frontend/src/components/PostItem](frontend/src/components/PostItem/index.js)) - страница информации об одном посте (ID беретя из URL-а)
-  * есть функция редактирования - переход на `/posts/{id}/edit`
-  * есть функция удаления - удаляет без перезагрузки, а потом переходит на главную страницу 
-* `PostForm` ([frontend/src/components/PostForm](frontend/src/components/PostForm/index.js)) - форма добавления/изменения поста
-  * если передаётся ID, то это изменение
-  * если ID нет - это добавление
- * `Loading` ([frontend/src/components/Loading](frontend/src/components/Loading/index.js)) - компонента загрузки - отображается, пока идет процесс загрузки
-
-
-
-**P.S.** 
-1) Используется новый `<Route path="" element={<Element ... />} />`.
-2) Используется `navigate`, `useNavigate` вместо `histoty`.
