@@ -79,7 +79,7 @@ URL берется из константы [frontend/src/const.js](frontend/src/
   * подключает  `items`, `selectedItem`, `status` из глобального `store`
   * вся логика удаления информации реализована внутри. Для этого используется `selectedItem` 
   * работа со store строится через thunk-функции (`dispatch(thunk.function(..))`)
-  * для отображения одного элемента используется `ListItem` ([frontend/src/components/ListItem](frontend/src/components/ListItem/index.js)) - это _"глупый компонент"_
+  * для отображения одного элемента используется `ListItem` ([frontend/src/components/ServiceList/ListItem.js](frontend/src/components/ServiceList/ListItem.js)) - это _"глупый компонент"_
 * `ServiceForm` ([frontend/src/components/ServiceForm](frontend/src/components/ServiceForm/index.js)) - форма редактирования элемента
   * подключает  `selectedItem`, `status` из глобального `store`
   * вся логика изменения и сохранения информации реализована внутри
