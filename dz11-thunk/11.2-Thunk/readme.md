@@ -24,7 +24,7 @@
 * `services` - создается с помощью `createSlice` и реализовано в [serviceReducer.js](frontend/src/store/serviceReducer.js). Содержит:
   * `items[]` - массив элементов (`{id, name, price}`)
   * `selectedItem` - текущий элемент (`{id,name,price,content}`). При удалении содержит ID удаляемых элементов в формате `{...[id]: id}`. Это сделано для возможности удаления нескольких элементов одновременно.
-  * `status` - статус выполняемой операции (`{'idle','loading','success','error')`}. Для удобства, используется экспортируемый тип данных `statusTypes` ([statusTypes.js](frontend/src/store/statusTypes.js))
+  * `status` - статус выполняемой операции (`{'idle','loading','success','error')`}. Для удобства, используется экспортируемый тип данных `statusTypes` ([storeTypes.js](frontend/src/store/storeTypes.js))
 
 При создании хранилища используются промежуточные обработчики - thunk, в котором настроен дополнительный параметр для всех Thunk-функций:
 `getDefaultMiddleware({
