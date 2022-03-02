@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+
+.list {
+    vertical-align: middle;
+    border: 1px solid lightCoral;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+.list-item {
+    vertical-align: middle;
+    align-content: center;
+    justify-content: center;
+    margin: 0px auto 0 auto;
+    height: 60px;
+    line-height: 30px;
+    display: flex;
+}
+.item-center {
+    margin: auto;
+    line-height: 100%;
+    vertical-align: middle;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+
+
+
+
+.item-container {
+    width: 100%;
+    text-align: center;
+    margin: 5px 20px 5px 0px;
+    padding: 5px;
+    font-weight: bold;
+    border: 1px solid #36BC1F;
+    border-radius: 3px;
+    display: flex;
+    align-content: baseline;
+    justify-content: space-between;
+}
+
+.item-content {
+    font-weight: bold;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.item-item {
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    margin: 5px;
+    padding: 5px;
+    display: table;
+    min-width: 170px;
+}
+
+.item-icons {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+
+.item-icon {
+    margin: 0 5px 0 5px;
+    padding: 3px;
+    border: 0;
+}
+
+    .item-icon a, a:hover, a:visited {
+        text-decoration: none;
+        color: black;
+    }
