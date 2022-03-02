@@ -74,12 +74,12 @@ URL берется из константы [frontend/src/const.js](frontend/src/
 * `ServiceList` ([frontend/src/components/ServiceList](frontend/src/components/ServiceList/index.js)) - отображение списка работ
   * подключает  `items`, `selectedItem`, `status` из глобального `store`
   * вся логика удаления информации реализована внутри. Для этого используется `selectedItem` 
-  * используется только глобальный store, а именно - `items`
+  * работа со store строится через thunk-функции (`dispatch(thunk.function(..))`)
   * для отображения одного элемента используется `ListItem` ([frontend/src/components/ServiceList](frontend/src/components/ServiceList/index.js)) - это _"глупый компонент"_
 * `ServiceForm` ([frontend/src/components/ServiceForm](frontend/src/components/ServiceForm/index.js)) - форма редактирования элемента
   * подключает  `selectedItem`, `status` из глобального `store`
   * вся логика изменения и сохранения информации реализована внутри
-  * используется только глобальный store, а именно - `selectedItem`  
+  * работа со store строится через thunk-функции (`dispatch(thunk.function(..))`)
 
 Дополнительно реализованы:
 * Иконки ([frontend/src/components/icons](frontend/src/components/icons/index.js)):
