@@ -34,7 +34,9 @@
 URL берется из константы [frontend/src/const.js](frontend/src/const.js) - содержит пути до backend-сервера и дополнительные пути к используемым модулям.
 
 Также реализован дополнительный промежуточный обработчик - логирование событий хранилища 
+
 `changeStatusBefore = (store) => (next) => async (action) => {...}` 
+
 в файле [serviceReducer.js](frontend/src/store/serviceReducer.js).
 
 
