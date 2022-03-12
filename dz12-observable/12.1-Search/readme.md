@@ -26,7 +26,7 @@
 * `services` - создается с помощью `createSlice` и реализовано в [serviceReducer.js](frontend/src/store/serviceReducer.js). Содержит:
   * `items[]` - массив элементов (`{id, name, price}`)
   * `search` - объект поиска (`{name,price}`). Заполняется из формы поиска при любом изменении значения поля.
-  * `status` - статус выполняемой операции (`{'idle','loading','success','error')`}. Для удобства, используется экспортируемый тип данных `statusTypes` ([statusTypes.js](frontend/src/store/statusTypes.js))
+  * `status` - статус выполняемой операции (`{'idle','loading','success','error')`}. Для удобства, используется экспортируемый тип данных `statusTypes` ([storeTypes.js](frontend/src/store/storeTypes.js))
 
 К хранилищу поделючено `middleware: epicMiddleware`.
 Тут же запускаются потоки EPIC
