@@ -107,7 +107,7 @@
 
 
 #### Переходы (routers)
-Схема переходов описана в [App.js](frontend/src/App.js). Отображаемые компоненты реализованы в папке (layouts)[frontend/src/layouts]):
+Схема переходов описана в [App.js](frontend/src/App.js). Отображаемые компоненты реализованы в папке [layouts](frontend/src/layouts):
 * `/` - главная страница (отображается `MainPage`([frontend/src/layouts/MainPage/index.js](frontend/src/layouts/MainPage/index.js)) - происходит перенаправление на `/services/`
 * `/services` - список работ (отображается `ServiceListPage`([frontend/src/layouts/ServiceListPage/index.js](frontend/src/layouts/ServiceListPage/index.js)) 
 * `/services/:id` - форма редактирования информации о выбранной работы (id) (отображается `ServiceItemPage`([frontend/src/layouts/ServiceItemPage/index.js](frontend/src/layouts/ServiceItemPage/index.js)) 
