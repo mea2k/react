@@ -1,9 +1,9 @@
-import { configureStore } from '@reduxjs/toolkit'
+п»їimport { configureStore } from '@reduxjs/toolkit'
 import { combineEpics, createEpicMiddleware } from 'redux-observable';
 import { changeSearchEpic, requestItemsEpic } from '../epics';
 import serviceReducer from './serviceReducer'
 
-// настройка EPIC-middleware
+// РЅР°СЃС‚СЂРѕР№РєР° EPIC-middleware
 const epic = combineEpics(
     changeSearchEpic,
     requestItemsEpic,
@@ -20,5 +20,5 @@ export const store = configureStore({
 
 
 
-// запуск EPIC
+// Р·Р°РїСѓСЃРє EPIC
 epicMiddleware.run(epic);
