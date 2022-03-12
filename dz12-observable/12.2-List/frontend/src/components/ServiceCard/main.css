@@ -1,0 +1,72 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic);
+
+.form {
+    vertical-align: top;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    width: 800px;
+}
+
+.form-item {
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+}
+
+    .form-item label {
+        font-size: inherit;
+    }
+    .form-item span {
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    .form-item button {
+        margin-top: 16px;
+        height: 30px;
+        width: 100%;
+    }
+
+input,
+label {
+    display: block;
+}
+
+.form-input {
+    height: 25px;
+    width: 100%;
+}
+
+.form-button-container {
+    margin: 20px 0px 10px 10px;
+    width: 307px;
+    font-weight: bold;
+    display: flex;
+    align-content: baseline;
+    justify-content: space-between;
+}
+
+.button {
+    min-width: 75px;
+    height: 30px;
+    padding: 5px;
+    border: 1px red solid;
+    box-shadow: red 1px 1px;
+    cursor: pointer;
+}
+
+.button-cancel {
+    background-color: lightPink;
+}
+
+    .button-cancel:hover {
+        background-color: coral;
+    }
+
+
+.button-submit {
+    background-color: lightcoral;
+}
+.button-submit:hover {
+    background-color: red;
+}
