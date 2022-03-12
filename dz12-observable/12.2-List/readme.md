@@ -38,7 +38,9 @@
   * `status` - статус выполняемой операции (`{'idle','loading','success','error')`}. Для удобства, используется экспортируемый тип данных `statusTypes` ([storeTypes.js](frontend/src/store/storeTypes.js))
 
 К хранилищу подключено `middleware: epicMiddleware`.
+
 Тут же запускаются потоки EPIC
+
 `epicMiddleware.run(epic);`
 
 #### Обработчики событий (Reducers)
