@@ -76,7 +76,7 @@
   * для отображения одного элемента используется `ListItem` ([frontend/src/components/ServiceList/ListItem.js](frontend/src/components/ServiceList/ListItem.js)) - это _"глупый компонент"_
 * `SearchForm` ([frontend/src/components/SearchForm](frontend/src/components/SearchForm/index.js)) - форма поиска
   * подключает  `search`, `status` из глобального `store`
-  * вся логика изменения и сохранения фильтров поиска завязана на событиях setSearchString, клоторые обрабатываются Epic-ами
+  * вся логика изменения и сохранения фильтров поиска завязана на событиях setSearchString, которые обрабатываются Epic-ами
   
 Дополнительно реализованы:
 * `Loading` ([frontend/src/components/Loading](frontend/src/components/Loading/index.js)) - большой индикатор загрузки (на основе `Spin`)
@@ -90,4 +90,4 @@
  
  
  #### App.js
- В главном файле ([frontend/src/App.js](frontend/src/App.js)) подшружается константа с URL-ом сервера - `SERVERURL` ([frontend/src/const.js](frontend/src/const.js))
+ В главном файле ([frontend/src/App.js](frontend/src/App.js)) подгружается константа с URL-ом сервера - `SERVERURL` ([frontend/src/const.js](frontend/src/const.js))
