@@ -28,7 +28,7 @@
   * `search` - объект поиска (`{name,price}`). Заполняется из формы поиска при любом изменении значения поля.
   * `status` - статус выполняемой операции (`{'idle','loading','success','error')`}. Для удобства, используется экспортируемый тип данных `statusTypes` ([storeTypes.js](frontend/src/store/storeTypes.js))
 
-К хранилищу поделючено `middleware: epicMiddleware`.
+К хранилищу подключено `middleware: epicMiddleware`.
 Тут же запускаются потоки EPIC
 `epicMiddleware.run(epic);`
 
