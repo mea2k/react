@@ -112,6 +112,6 @@
 
  
  #### App.js
- В главном файле ([frontend/src/App.js](frontend/src/App.js)) подшружается константа с URL-ом сервера - `SERVERURL` ([frontend/src/const.js](frontend/src/const.js))
+ В главном файле ([frontend/src/App.js](frontend/src/App.js)) подгружается константа с URL-ом сервера - `SERVERURL` ([frontend/src/const.js](frontend/src/const.js))
 
 
