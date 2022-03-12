@@ -34,7 +34,7 @@
 
 #### Обработчики событий (Reducers)
 Обработчики событий (не знаю как по-русски правильно reducers):
-* `serviceReducer` ([serviceReducer](frontend/src/store/serviceReducer.js) содержит реализацию событий:
+* `serviceReducer` ([serviceReducer](frontend/src/store/serviceReducer.js)) содержит реализацию событий:
   * `requestItems` - запрос на получение списка работ (items=[]). Статус status устанавливается в 'Loading'
   * `setItemsSuccess` - заполнение массива элементов (payload - массив [{id, name, price}, ... ]). Статус status устанавливается в 'Success'
   * `setItemsError` - фиксация ошибки получения списка работ (items=[]). Статус status устанавливается в 'Error'
