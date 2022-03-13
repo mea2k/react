@@ -60,7 +60,7 @@
 4. `function* handleRequestItemsSaga(action)` - функция-генератор - работник (worker)
    * Обрабатывает событие `requestItems`
    * Из STATE извлекается объект SEARCH (фильтр поиска)
-   * Осуществляется вызов API-функции `api.getServiceList)`
+   * Осуществляется вызов API-функции `api.getServiceList()`
    * По результатам формируется событие `setItemsSuccess` ИЛИ `setItemsError`
 
 В файле также подгружается константа с URL-ом сервера - `SERVERURL` ([frontend/src/const.js](frontend/src/const.js)). Она используется в сагах для вызова API-функций
