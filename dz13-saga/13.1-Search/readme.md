@@ -63,6 +63,9 @@
    * Осуществляется вызов API-функции `api.getServiceList)`
    * По результатам формируется событие `setItemsSuccess` ИЛИ `setItemsError`
 
+В файле также подгружается константа с URL-ом сервера - `SERVERURL` ([frontend/src/const.js](frontend/src/const.js)). Она используется в сагах для вызова API-функций
+
+
 ### API
 Для работы с backend-сервером используются API-функции из своей библиотеки [frontend/src/api/index.js](frontend/src/api/index.js):
 * `async getServiceList(url, search)` - формирование GET-запроса со строкой поиска (?name=vvv&price=xxx)
@@ -93,5 +96,4 @@
   * отображает список работ (`ServiceList`)
  
  
- #### App.js
- В главном файле ([frontend/src/App.js](frontend/src/App.js)) подгружается константа с URL-ом сервера - `SERVERURL` ([frontend/src/const.js](frontend/src/const.js))
+
